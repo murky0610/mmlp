@@ -5,6 +5,8 @@
 
   <center><h3 class="text-primary">Now Showing</h3></center>
 
+
+
 <div id="movie-carousel-field">
 
   <div class="list-prev list-nav">
@@ -22,10 +24,12 @@
     <?php endwhile; ?>
   </div>
 
-   <div class="list-next list-nav">
+  <div class="list-next list-nav">
     <a href="javascript:void(0)" class="text"><i class="fa fa-angle-right"></i></a>
   </div>
+
 </div>
+
 
 <script>
   
@@ -44,5 +48,5 @@
   $('.mov-det button').click(function(){
     location.replace('index.php?page=reserve&id='+$(this).attr('data-id'))
   })
-                          
+
 </script>

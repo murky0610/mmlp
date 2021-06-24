@@ -10178,9 +10178,12 @@ div #movie-carousel-field {
 }
 #movie-carousel-field .list-nav {
     width: calc(5%);
-    display: flex;
     align-items: center;
+    display: flex;
+justify-content: center
+
 }
+
 #movie-carousel-field a {
     margin:auto;
     font-size:3rem;

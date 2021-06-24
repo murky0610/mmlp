@@ -41,10 +41,11 @@ $id = $_SESSION["id"];
 	</header>
 
 
+    <?php include 'index.php'; ?> 
+
      <section id="top_movies" class="clearfix">
         <div class="wrapper">
-   
-          <?php include 'index.php'; ?> 
+          
 
         <div class="text-center mt-4">
         <h4>Want to add some food?</h4>
@@ -68,13 +69,13 @@ $id = $_SESSION["id"];
 		</div>
 	</footer>
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script> -->
     
  
 
-</script>
+<!-- </script> -->
     
 </body>
 </html>

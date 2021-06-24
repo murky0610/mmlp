@@ -26,7 +26,7 @@
  		<div class="col-lg-12">
  			<div class="row">
  				<div class="col-md-4">
- 					<img src="img/<?php echo $mov['cover_img'] ?>" alt="" class="reserve-img">
+ 					<img src="img/<?php echo $mov['cover_img'] ?>" class="reserve-img">
  				</div>
  				<div class="col-md-8">
  					<div class="card bg-dark ">
