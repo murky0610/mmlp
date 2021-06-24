@@ -1,0 +1,202 @@
+*{
+    box-sizing:border-box}
+
+html,body{
+    font-family:'Open SanS', sans-serif}
+
+.clearfix:before, .clearfix:after{
+    content:" "; display:table}
+
+.clearfix:after{
+    clear:both}
+
+.wrapper{
+    text-align: center; width:1440px; max-width:100%; margin: 0 auto }
+
+h1,h2,h3,h4,h5,h6{
+    font-weight:300}
+
+#top_header{
+    padding: 1.5em 0;}
+
+#top_header .logo {float:left;text-transform:uppercase;font-size:1.15em;font-weight:700;}
+
+#top_header .logo a{text-decoration: none; color:black}
+
+#top_header .logo a:hover{color:#73e298}
+
+#top_header #main_nav{
+    float:right;font-size:.9em;padding-top:1em}
+
+#top_header #main_nav a{
+    color:#8b8b9f;text-decoration:none;margin: 1em}
+
+#top_header #main_nav a:hover{color:#73e298}
+
+#top_movies{
+    padding:2em 0}
+
+#top_movies header{
+    text-align: center;
+    padding:0 0 1.5em 0}
+
+#top_movies header h2, #top_movies header .view_more{
+    display:inline}
+
+#top_movies header .view_more{
+    float:right;font-size:.8em;margin:1em 3.5% 0 0}
+
+#top_movies{
+    border-bottom:2px dashed #d4d4d4}
+
+.row_1{
+    width:100%}
+
+.row_1 .post{
+    width:22.5%;float:left;margin-right:2.5%}
+
+.row_1 .post img{
+    width:100%;max-width:100%; border-radius:0.25em}
+
+.row_1 .post .title{
+    font-size:1.25em;margin:1em 0 0 0;color:#252529}
+
+.row_1 .post .post_info{
+    font-size:.75em;color:#8b8b9f;margin:0.5em 0}
+
+.row_1 .post .button{
+    border:1px solid gold;
+    outline:none;
+    padding:0.5em 1.5em;
+    border-radius:10em;
+    font-weight:600;
+    font-size:1.25em;
+    background:#fed8b1 ;
+    float: left;
+    width: 50%;
+    }
+
+
+.row_2{
+    width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+.row_2 .post{
+    width:22.5%;float:left;margin-right:2.5%}
+
+.row_2 .post img{
+    width:100%;max-width:100%; border-radius:0.25em; }
+
+.row_2 .post .title{
+    font-size:1.25em;margin:1em 0 0 0;color:#252529}
+
+.row_2 .post .post_info{
+    font-size:.75em;color:#8b8b9f;margin:0.5em 0}
+
+.row_2 .post .button{
+    border:1px solid gold;
+    outline:none;
+    padding:0.5em 1.5em;
+    border-radius:10em;
+    font-weight:600;
+    font-size:1.25em;
+    background:#fed8b1 ;
+    float: left;
+    width: 50%;
+    }
+
+.order{
+    text-align: center; width:600px;margin:0 auto}
+
+.order .button{
+    width:100px;}
+
+
+#main_footer{
+    padding:2.5em 0;
+    text-align:center}
+
+#main_footer .logo{
+    text-transform:uppercase;
+    font-size:1.15em;
+    font-weight:700}
+
+#main_footer .copyright{
+    color:#8b8b9f;
+    font-size:.75em;
+    margin:0}
+
+#main_footer .links{display:inline}
+
+#main_footer .links a{
+    color:#8b8b9f;
+    font-size:.75em;
+    text-decoration:none;
+    margin:0 .5em}
+
+#main_footer .links a:hover{color:#73e298}
+
+
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  .accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  }
+  .accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+  }
+  .accordion-item-header.active::after {
+    content: "\2212";
+  }
+  .accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  }
+  
+  @media(max-width:767px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  .accordionbody{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+  h1 {
+    text-align: center;
+  
+    font-size: 2.5rem;
+  }
+  

@@ -1,0 +1,107 @@
+.clearfix:before, .clearfix:after{
+    content:" "; display:table}
+
+.clearfix:after{
+    clear:both}
+
+.wrapper{
+    width:95%; max-width:100%; margin: 0 auto }
+
+#top_header{ 
+    padding: 2.3em 0; }
+
+#top_header .logo {float:left;text-transform:uppercase;font-size:1.15em;font-weight:700;}
+
+#top_header .logo a{text-decoration: none; color:black}
+
+#top_header .logo a:hover{color:#73e298}
+
+#top_header #main_nav{
+    float:right;font-size:.9em;}
+
+#top_header #main_nav a{
+    color:#8b8b9f;text-decoration:none;margin: 1em}
+
+#top_header #main_nav a:hover{color:#73e298}
+    
+header, #main_footer{
+    font-family:'Open SanS', sans-serif !important;
+    font-size: 1em!important;}
+
+h4{
+    font-family:'Open SanS', sans-serif !important;
+    font-size: 1.15em!important;}
+    
+#main_footer{ 
+    padding:2.5em 0;
+    text-align:center}
+
+#main_footer .logo{
+    text-transform:uppercase;
+    font-size:1.15em;
+    font-weight:700}
+
+#main_footer .logo span{
+    font-weight:300;
+    color:#73e298}
+
+#main_footer .copyright{
+    color:#8b8b9f;
+    font-size:.75em;
+    margin:0}
+
+#main_footer .links{display:inline}
+
+#main_footer .links a{
+    color:#8b8b9f;
+    font-size:.75em;
+    text-decoration:none;
+    margin:0 .5em}
+
+#main_footer .links a:hover{color:#73e298}
+
+
+.ui-w-80 {
+    width: 80px !important;
+    height: auto;
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+
+.text-light {
+    color: grey !important;
+}
+
+.btn-facebook {
+    border-color: blue;
+    background: blue;
+    color: lightgoldenrodyellow;
+}
+
+.btn-instagram {
+    border-color: rgba(0,0,0,0);
+    background-color: #cd486b;
+    color: lightgoldenrodyellow;
+}
+    
+.btn-twitter {
+    border-color: black;
+    background-color: white;
+    color: darkgoldenrod;
+}
+
+
+.account-settings-fileinput {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 100px;
+}
+
+
+    
+
+
