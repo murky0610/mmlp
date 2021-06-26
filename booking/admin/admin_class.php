@@ -30,7 +30,7 @@ Class Action
 		// $data .= ", contact_no = '".$contact_no."' ";
 		$data .= ", qty = '".$qty."' ";
 		$data .= ", price = '".$price."' ";
-		$data .= ", `date` = '".$date."' ";
+		$data .= ", `date` = '".$showdate."' ";
 		$data .= ", `time` = '".$time."' ";
 
 		$save = $this->db->query("INSERT INTO tickets set ".$data);

@@ -52,7 +52,7 @@
  								<div class="row">
  								<div class="form-group col-md-4">
  									<label for="" class="control-label">Theater</label>
- 									<select class="browser-default custom-select" name="ts_id">
+ 									<select class="browser-default custom-select" name="ts_id" required>
  										<option value=""></option>
  										<?php 
 											$qry = $conn->query("SELECT * FROM  theater order by name asc");
@@ -63,9 +63,12 @@
  									</select>
  								</div>
  								</div>
+
+ 								<!-- This is the div where other contents from managa_reserve.php will show up -->
  								<div id="display-other">
  									
  								</div>
+ 								
  								<div class="row">
  									<button class="col-md-2 btn btn-block btn-primary">Book</button>
  								</div>
@@ -80,6 +83,7 @@
 </header>
 
 <script>
+
 	$('[name="ts_id"]').change(function(){
 		$.ajax({
 			url:'manage_reserve.php?id='+$(this).val()+'&mid=<?php echo $_GET['id'] ?>',
@@ -88,6 +92,7 @@
 			}
 		})
 	})
+
 	$(document).ready(function(){
 		$('#save-reserve').submit(function(){
 			$('#save-reserve button').attr('disabled',true).html("Saving...")

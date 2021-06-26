@@ -47,7 +47,7 @@ mysqli_free_result($result);
 
       // free the $result from memory (good practise)
     mysqli_free_result($result);
-    // print_r($points);
+    
 
     $total_points = 0;
     foreach($points as $point): 

@@ -16,7 +16,7 @@
   <div class="list">
     <?php while($row=$movies->fetch_assoc()): ?>
         <div class="movie-item">
-          <img src="img/<?php echo $row['cover_img']  ?>" alt="<?php echo $row['title'] ?>" >
+          <img src="img/<?php echo htmlspecialchars($row['cover_img'])  ?>" alt="<?php echo htmlspecialchars($row['title']) ?>">
           <div class="mov-det">
             <button type="button" class="btn btn-primary" data-id="<?php echo $row['id'] ?>">Reserve Seat</button>
           </div>
