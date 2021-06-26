@@ -64,7 +64,7 @@
  								</div>
  								</div>
 
- 								<!-- This is the div where other contents from managa_reserve.php will show up -->
+ 								<!-- This is the div where other contents from manage_reserve.php will show up -->
  								<div id="display-other">
  									
  								</div>
@@ -83,6 +83,19 @@
 </header>
 
 <script>
+	// refresh the page to prevent any invalid values
+
+	/* if my "reload" var isn't set locally.. getItem will be false */
+	if (!localStorage.getItem("reload")) {
+	    /* set reload to true and then reload the page */
+	    localStorage.setItem("reload", "true");
+	    location.reload();
+	}
+	/* after reloading remove "reload" from localStorage */
+	else {
+	    localStorage.removeItem("reload");
+	    // localStorage.clear(); // or clear it, instead
+	}
 
 	$('[name="ts_id"]').change(function(){
 		$.ajax({
