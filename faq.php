@@ -52,7 +52,10 @@
         <div class="accordion-item-body">
           <div class="accordion-item-body-content">
             To book a reservation, you first need to have an account. If you don't have an account yet, you can sign up for free.<br>
-            Once you're logged in, select "Book Now!" on the upper right of your screen. Then, you can set the specific date and time of your desired schedule.
+            Once you're logged in, select "Book Now!" on the upper right of your screen. Then, you can choose the specific date and time of your desired schedule. The showing date and time of the movie differs from each theater room. Each theater room has 3 seat groups. You have to choose which seat group you want to seat in.  
+            <br> <br>
+            Once you have booked your reservation, you have to confirm it in user settings in order to properly reserve your seat together with your chosen foodies.
+
           </div>
         </div>
       </div>

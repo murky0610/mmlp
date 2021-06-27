@@ -1,4 +1,24 @@
 $(document).ready(function() {
+  $("#seat_group").change(function() {
+    var seat_groups = $(this).val();
+    if(seat_groups != "") {
+      $.ajax({
+        url:"get-date.php",
+        data:{theater_id: seat_groups},
+        type:'POST',
+        success:function(response) {
+          var resp = $.trim(response);
+          $("#showdate").html(resp);
+        }
+      });
+    } else {
+      $("#showdate").html("<option value=''>------- Select --------</option>");
+    }
+  });
+});
+
+
+$(document).ready(function() {
   $("#showdate").change(function() {
     var date_id = $(this).val();
     if(date_id != "") {
@@ -16,3 +36,9 @@ $(document).ready(function() {
     }
   });
 });
+
+
+
+
+
+

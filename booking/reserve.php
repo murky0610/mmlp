@@ -22,8 +22,11 @@
 
 
  <header class="masthead">
+ 	
  	<div class="container pt-5">
  		<div class="col-lg-12">
+ 			<a href="booking.php">
+                   <button type="button" class="btn btn-outline-info mb-4">Go Back</button></a>
  			<div class="row">
  				<div class="col-md-4">
  					<img src="img/<?php echo $mov['cover_img'] ?>" class="reserve-img">
@@ -43,8 +46,8 @@
  						<div class="card-body">
  							<h4>Reserve your seat here:</h4>
  							<form action="" id="save-reserve">
-
- 								<input type="hidden" name="movie_id" value="<?php echo $_GET['id'] ?>">
+ 								<?php $movie = $_GET['id']; ?>
+ 								<input type="hidden" name="movie_id" value="<?php echo $movie ?>">
  								<input type="hidden" name="id" value="<?php echo $id ?>">
  								<input type="hidden" name="price" value="<?php echo $mov['price'] ?>">
 
@@ -56,7 +59,7 @@
  										<option value=""></option>
  										<?php 
 											$qry = $conn->query("SELECT * FROM  theater order by name asc");
-											while($row= $qry->fetch_assoc()):
+											while($row = $qry->fetch_assoc()):
  										?>	
  										<option value="<?php echo $row['id'] ?>"><?php echo $row['name'] ?></option>
  										<?php endwhile; ?>
@@ -70,7 +73,7 @@
  								</div>
  								
  								<div class="row">
- 									<button class="col-md-2 btn btn-block btn-primary">Book</button>
+ 									<button class="col-md-2 ml-3 mt-3 btn btn-block btn-primary">Book</button>
  								</div>
  							</form>
 
@@ -83,6 +86,7 @@
 </header>
 
 <script>
+	
 	// refresh the page to prevent any invalid values
 
 	/* if my "reload" var isn't set locally.. getItem will be false */
@@ -115,10 +119,9 @@
 				data:$(this).serialize(),
 				success:function(resp){
 					if(resp == 1){
-						alert("Reservartion successfully saved");
+						alert("Reservartion successfully saved, awaiting confirmation");
 						location.replace('booking.php')
 					} else {
-						alert("Reservartion successfully saved");
 						location.replace('booking.php')
 					}
 					
