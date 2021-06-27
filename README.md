@@ -1,3 +1,3 @@
 # mmlp
  
-Sample Move/Cinema Website
+Sample Movie/Cinema Website
