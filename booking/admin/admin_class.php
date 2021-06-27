@@ -11,8 +11,9 @@ Class Action
 	public function __construct() {
    	include 'db_connect.php';
     
-    $this->db = $conn;
+    	$this->db = $conn;
 	}
+
 	function __destruct() {
 	    $this->db->close();
 	}

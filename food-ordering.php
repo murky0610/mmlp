@@ -15,58 +15,54 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 if(isset($_POST['ticket_submit']))
 {
+
+		$sql = "SELECT * FROM food_menu";   
+		$result = mysqli_query($link, $sql);
+		$food = mysqli_fetch_assoc($result);
+		mysqli_free_result($result);
+
 	if(!empty($_POST['fries_id'])) 
         {
           	$fries = $_POST['fries_id'];
-          echo $fries.' Fries';
         } else {
         	$fries = 0;
-          echo $fries.' Fries';
 		}
 
 	if(!empty($_POST['popcorn_id'])) 
         {
           	$popcorn = $_POST['popcorn_id'];
-          echo $popcorn.' Popcorn';
         } else {
         	$popcorn = 0;
-          echo $popcorn.' Popcorn';
 		}
 
 	if(!empty($_POST['nachos_id'])) 
         {
           	$nachos = $_POST['nachos_id'];
-          echo $nachos.' Nachos';
         } else {
           	$nachos = 0;
-          echo $nachos.' Nachos';
 		}
 
 	if(!empty($_POST['softdrinks_id'])) 
         {
           	$softdrinks = $_POST['softdrinks_id'];
-          echo $softdrinks.' Softdrinks';
         } else {
         	$softdrinks = 0;
-          echo $softdrinks.' Softdrinks';
 		}
 
 	if(!empty($_POST['water_id'])) 
         {
           	$water = $_POST['water_id'];
-          echo $water.' Water';
         } else {
         	$water = 0;
-          echo $water.' Water';
 		}
 
   	$ticket_id = $_POST['ticket_id'];
 
-  	$fries_price = $fries * 50;
-  	$popcorn_price = $popcorn * 40;
-  	$nachos_price = $nachos * 80;
-  	$softdrinks_price = $softdrinks * 40;
-  	$water_price = $water * 20;
+  	$fries_price = $fries * $food['fries_menu_price'];
+  	$popcorn_price = $popcorn * $food['popcorn_menu_price'];
+  	$nachos_price = $nachos * $food['nachos_menu_price'];
+  	$softdrinks_price = $softdrinks * $food['softdrinks_menu_price'];
+  	$water_price = $water * $food['water_menu_price'];
 
 	$result = mysqli_query($link, "SELECT * FROM food WHERE ticket_id = $ticket_id ");
 

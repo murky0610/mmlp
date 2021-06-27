@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 27, 2021 at 04:27 PM
+-- Generation Time: Jun 27, 2021 at 11:05 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.15
 
@@ -45,7 +45,7 @@ CREATE TABLE `customers` (
 INSERT INTO `customers` (`username`, `email`, `password`, `phone`, `address`, `Points`, `Payment_ID`, `id`) VALUES
 ('JC', 'jcwarain@gmail.com', '$2y$10$mxWqc/B2cbtbmxw1BsjY3uUo2haXEVTdZKIz0CVUJKQvQd62wxajG', '+9234425982234', 'Toril', NULL, NULL, 0),
 ('JC123', 'jcwarain@yahoo.com', '$2y$10$WShzadhcbDOzju8AihpdUuXmIgfwm1jWl7.wDHg/LeiKmsOcgirpG', NULL, NULL, NULL, NULL, 8),
-('Qeixo123', 'jcwarain@niggers.com', '$2y$10$jV9m.7OjBkhpU7w3EAW.deUE9C4hj1Y6gM7qnvUrvRIyXV0xIufZK', '09333001534', NULL, 6.4, NULL, 9);
+('Qeixo', 'jrwarain1@up.edu.ph', '$2y$10$jV9m.7OjBkhpU7w3EAW.deUE9C4hj1Y6gM7qnvUrvRIyXV0xIufZK', '09234425982', 'Toril, Davao City, Philippines', 23.2, NULL, 9);
 
 -- --------------------------------------------------------
 
@@ -67,6 +67,36 @@ CREATE TABLE `food` (
   `water_price` int(11) DEFAULT NULL,
   `num_water` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `food`
+--
+
+INSERT INTO `food` (`food_id`, `ticket_id`, `fries_price`, `num_fries`, `popcorn_price`, `num_popcorn`, `nachos_price`, `num_nachos`, `softdrinks_price`, `num_softdrinks`, `water_price`, `num_water`) VALUES
+(40, 177, 100, 2, 80, 2, 160, 2, 80, 2, 40, 2),
+(41, 181, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `food_menu`
+--
+
+CREATE TABLE `food_menu` (
+  `id` int(11) NOT NULL,
+  `fries_menu_price` int(11) NOT NULL,
+  `popcorn_menu_price` int(11) NOT NULL,
+  `nachos_menu_price` int(11) NOT NULL,
+  `softdrinks_menu_price` int(11) NOT NULL,
+  `water_menu_price` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `food_menu`
+--
+
+INSERT INTO `food_menu` (`id`, `fries_menu_price`, `popcorn_menu_price`, `nachos_menu_price`, `softdrinks_menu_price`, `water_menu_price`) VALUES
+(1, 50, 40, 80, 40, 20);
 
 -- --------------------------------------------------------
 
@@ -234,13 +264,9 @@ CREATE TABLE `tickets` (
 
 INSERT INTO `tickets` (`ticket_id`, `movie_id`, `ts_id`, `qty`, `date`, `time`, `id`, `price`) VALUES
 (177, 10, 4, 4, '2021-01-01', '15:00:00', 9, 160),
-(180, 10, 3, 2, '2021-07-10', '14:00:00', 9, 80),
 (181, 10, 4, 3, '2021-01-01', '15:00:00', 9, 120),
 (182, 10, 4, 3, '2021-01-01', '15:00:00', 9, 120),
-(183, 10, 4, 6, '2021-01-01', '15:00:00', 9, 240),
-(184, 10, 4, 5, '2021-01-01', '15:00:00', 9, 200),
-(185, 10, 3, 6, '2021-07-10', '14:00:00', 9, 240),
-(186, 10, 3, 2, '2021-07-08', '14:00:00', 9, 80);
+(187, 12, 2, 3, '2021-07-09', '19:00:00', 9, 180);
 
 --
 -- Indexes for dumped tables
@@ -258,6 +284,12 @@ ALTER TABLE `customers`
 ALTER TABLE `food`
   ADD PRIMARY KEY (`food_id`),
   ADD KEY `tickets->ticket-id_1` (`ticket_id`);
+
+--
+-- Indexes for table `food_menu`
+--
+ALTER TABLE `food_menu`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `movies`
@@ -312,7 +344,13 @@ ALTER TABLE `customers`
 -- AUTO_INCREMENT for table `food`
 --
 ALTER TABLE `food`
-  MODIFY `food_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `food_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+
+--
+-- AUTO_INCREMENT for table `food_menu`
+--
+ALTER TABLE `food_menu`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `movies`
@@ -342,7 +380,7 @@ ALTER TABLE `theater`
 -- AUTO_INCREMENT for table `tickets`
 --
 ALTER TABLE `tickets`
-  MODIFY `ticket_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=187;
+  MODIFY `ticket_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
 
 --
 -- Constraints for dumped tables
