@@ -48,9 +48,9 @@ $id = $_SESSION["id"];
           
 
         <div class="text-center mt-4">
-        <h4>Want to add some food?</h4>
+        <h3>Want to add some <b>foodies</b>?</h3>
         <a href="../food-ordering.php">
-             <button type="button" class="btn btn-outline-warning">Go to <strong>Food</strong></button> </a>
+             <button type="button" class="btn btn-outline-warning mt-4">Go to <strong>Food</strong></button> </a>
         </div>
 
       </div>

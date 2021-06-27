@@ -45,26 +45,33 @@
 	<section id="banner" class="clearfix">
 		<div id="banner_content_wrapper">
 			<div id="poster">
-				<img src="images/movies/deadpool.jpg" alt="Deadpool Movie Poster" class="featured_image">
-				<img src="images/play_button.png" alt="Play Trailer" class="play_button">
+				<img src="images/movies/f9.jpg" alt="Deadpool Movie Poster" class="featured_image">
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp
+				
+				<button class="btn btn-slide-left">Book Now!</button>
 			</div>
 			<div id="content">
-                <h2 class="feature">Featured: </h2>
-				<h2 class="title">Deadpool</h2>
+				<h2 class="feature">Feature:</h2>
+				<h2 class="title">F9</h2>
 				<div class="ratings">
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
-					<i class="fa fa-star inactive"></i>
+					<i class="fa fa-star"></i>
 				</div>
 
-				<p class="description">A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.</p>
+				<p class="description">Vin Diesel’s Dom Toretto is leading a quiet life off the 
+		grid with Letty and his son, little Brian, but they 
+		know that danger always lurks just over their peaceful 
+		horizon. This time, that threat will force Dom to 
+		confront the sins of his past if he’s going to save 
+		those he loves most. His crew joins together to stop 
+		a world-shattering plot led by the most skilled assassin 
+		and high-performance driver they’ve ever encountered: 
+		a man who also happens to be Dom’s forsaken brother, Jakob (John Cena).</p>
 
-				<p class="info">R <span>|</span> 108 min <span>|</span> Action, Adventure, Comedy <span>|</span> 12 February 2016</p>
-                
-                <a href="booking/booking.php"> <button class="button">Book Now!</button> </a>
-                
+				<p class="info">PG-13 <span>|</span> 2 hours, 25 minutes <span>|</span> Action | Adventure | Sequel <span>|</span> June 25, 2021</p>
 
 			</div>
 		</div>
@@ -77,56 +84,79 @@
 				<a href="movies.php" class="view_more">View All Movies</a>
 			</header>
 
+			   
+            <div class="row">
+			
+				<div class="post">
+					<form>
+				<button type="submit" formaction="overview/f9.php"class="scanfcode">
+					<img src="images/movies/f9.jpg" alt="The Martian">
+					
+					<h3 class="title">Fast and Furious 9</h3>
+					<p class="post_info">PG13 | Action , Genre <br> 2 hours, 25 minutes <br>  </p>
+</button>
+				</div>
+
+</div>
 			<div class="row">
 				<div class="post">
-					<img src="images/movies/the-martian.jpg" alt="The Martian">
-					<h3 class="title">The Martian</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
+				<button type="submit" formaction="overview/false_posititve.php"class="scanfcode">
+					<img src="images/movies/fp.jpg" alt="Inside Out">
+					<h3 class="title">False Positive</h3>
+					<p class="post_info">R | Horror , Thriller <br>  1 hour, 32 minutes <br></p>
+					</button>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="post">
-					<img src="images/movies/inside-out.jpg" alt="Inside Out">
-					<h3 class="title">Inside Out</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
+				<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode">
+					<img src="images/movies/ww.jpg" alt="Werewolves Within">
+					<h3 class="title">Werewolves Within</h3>
+					<p class="post_info">R | Comedy , Horror <br>  1 hour, 40 minutes<br></p>
+</button>
+				</div>
+			</div>
+			<div class="row">
+		
+			
+				<div class="post">
+				<button type="submit" formaction="overview/felix_treasure.php"class="scanfcode">
+					<img src="images/movies/fathd.jpg" alt="Mad Max">
+					<h3 class="title" style="font-size:15px;">Felix And The Hidden Treasure</h3>
+					<p class="post_info">PG | Family , Animation  <br>  1 hour, 30 minutes<br></p>
+</button>
+				</div>
+			
+
+		
+			</div>
+			
+			<div class="row">
+				<div class="post">
+				<button type="submit" formaction="overview/against_the_current.php"class="scanfcode">
+					<img src="images/movies/atc.jpg" alt="Star Wars">
+					<h3 class="title">Against The Current</h3>
+					<p class="post_info">NR | Documentary<br>  1 hour, 30 minutes<br></p>
+</button>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="post">
-					<img src="images/movies/jurassic-world.jpg" alt="Jurassic World">
-					<h3 class="title">Jurassic World</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
+				<button type="submit" formaction="overview/i_carry.php"class="scanfcode">
+					<img src="images/movies/icywm.jpg" alt="The Avengers">
+					<h3 class="title">I Carry You With Me</h3>
+					<p class="post_info">R | Drama  <br>  1 hour, 50 minutes<br></p>
+			</button>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="post">
-					<img src="images/movies/mad-max.jpg" alt="Mad Max">
-					<h3 class="title">Mad Max</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="post">
-					<img src="images/movies/star-wars.jpg" alt="Star Wars">
-					<h3 class="title">Star Wars</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="post">
-					<img src="images/movies/avengers.jpg" alt="The Avengers">
-					<h3 class="title">Avengers</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
-				</div>
-			</div>
-
+            
 		</div>
+        
 	</section>
+
+
 
 	<footer id="main_footer">
 		<p class="logo">MMLP</p>

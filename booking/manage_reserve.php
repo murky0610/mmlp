@@ -72,7 +72,7 @@ while($row=$ts->fetch_assoc())
 
 	<div class="form-group col-md-2">
 		<label for="" class="control-label">Quantity</label>
-		<input type="number" name="qty" id="qty" class="form-control" min="0" max="7" required="">
+		<input type="number" name="qty" id="qty" class="form-control" min="0" max="5" required="">
 	</div>
 
 

@@ -25,109 +25,139 @@
 
 	<section id="top_movies" class="clearfix">
 		<div class="wrapper">
-            <h2 style="text-align: center; font-weight: 510">Opening This Week:</h2>
+            <h2 style="text-align: center; font-weight: 510">Now Showing:</h2>
+			
+			<div class="row">
+			
+				<div class="post">
+					<form>
+				<button type="submit" formaction="overview/f9.php"class="scanfcode">
+					<img src="images/movies/f9.jpg" alt="The Martian">
+					
+					<h3 class="title">Fast and Furious 9</h3>
+					<p class="post_info">PG13 | Action , Genre <br> June 20 - 29 <br> 2 hours, 25 minutes <br> <span><b>10:30 am - 1:00 pm</b></span> </p>
+</button>
+				</div>
+
+</div>
+			<div class="row">
+				<div class="post">
+				<button type="submit" formaction="overview/false_positive.php"class="scanfcode">
+					<img src="images/movies/fp.jpg" alt="Inside Out">
+					<h3 class="title">False Positive</h3>
+					<p class="post_info">R | Horror , Thriller <br> June 23 - 29<br> 1 hour, 32 minutes <br> <span><b>1:30 pm - 3:00 pm</b></span></p>
+				
+				</div>
+				</button>
+			</div>
+
+			<div class="row">
+				<div class="post">
+				<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode">
+					<img src="images/movies/ww.jpg" alt="Werewolves Within">
+					<h3 class="title">Werewolves Within</h3>
+					<p class="post_info">R | Comedy , Horror <br> June 25 - 29<br> 1 hour, 40 minutes<br><span><b>3:30 pm - 5:00 pm</b></span></p>
+</button>
+				</div>
+			</div>
+			<div class="row">
+		
+			
+				<div class="post">
+				<button type="submit" formaction="overview/felix_treasure.php"class="scanfcode">
+					<img src="images/movies/fathd.jpg" alt="Mad Max">
+					<h3 class="title" style="">Felix And The Hidden Treasure</h3>
+					<p class="post_info">PG | Family , Animation <br> June 25 - 30 <br>  1 hour, 30 minutes<br><span><b>5 pm - 6:30 pm</b></span></p>
+</button>
+				</div>
+			
+
+		
+			</div>
 			
 			<div class="row">
 				<div class="post">
-					<img src="images/movies/the-martian.jpg" alt="The Martian">
-					<h3 class="title">The Martian</h3>
-					<p class="post_info">PG13 | 109 Minutes, <br> May 17-20 <br> <span><b>7:30 - 9:00 pm</b></span> </p>
+				<button type="submit" formaction="overview/against_the_current.php"class="scanfcode">
+					<img src="images/movies/atc.jpg" alt="Star Wars">
+					<h3 class="title">Against The Current</h3>
+					<p class="post_info">NR | Documentary <br> June 25 - 30 <br>  1 hour, 30 minutes<br><span><b>7:00 pm - 8:30 pm</b></span></p>
+
 				</div>
+				</button>
 			</div>
 
 			<div class="row">
 				<div class="post">
-					<img src="images/movies/inside-out.jpg" alt="Inside Out">
-					<h3 class="title">Inside Out</h3>
-					<p class="post_info">PG13 | 109 Minutes <br> May 18<br> <span><b>8:30 - 9:00 pm</b></span></p>
+				<button type="submit" formaction="overview/i_carry.php"class="scanfcode">
+					<img src="images/movies/icywm.jpg" alt="The Avengers">
+					<h3 class="title">I Carry You With Me</h3>
+					<p class="post_info">R | Drama <br> June 26 - 30 <br>  1 hour, 50 minutes<br><span><b>8:30 pm - 11:30 pm</b></span></p>
+			</button>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="post">
-					<img src="images/movies/jurassic-world.jpg" alt="Jurassic World">
-					<h3 class="title">Jurassic World</h3>
-					<p class="post_info">PG13 | 109 Minutes <br> May 18-19<br> <span><b>10:30 - 9:00 am</b></span></p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="post">
-					<img src="images/movies/mad-max.jpg" alt="Mad Max">
-					<h3 class="title">Mad Max</h3>
-					<p class="post_info">PG13 | 109 Minutes <br> May 21-22 <br> <span><b>10:30 - 12:00 am</b></span></p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="post">
-					<img src="images/movies/star-wars.jpg" alt="Star Wars">
-					<h3 class="title">Star Wars</h3>
-					<p class="post_info">PG13 | 109 Minutes <br> May 25-26 <br> <span><b>9:00 - 10:00 pm</b></span></p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="post">
-					<img src="images/movies/avengers.jpg" alt="The Avengers">
-					<h3 class="title">Avengers</h3>
-					<p class="post_info">PG13 | 109 Minutes <br> May 23-24 <br> <span><b>11:00 - 12:30 am</b></span></p>
-				</div>
-			</div>
 		</div>
 	</section>
     
     <hr>
     
-    <section id="top_movies" class="clearfix">
+	<section id="top_movies" class="clearfix">
 		<div class="wrapper">
-		<h2 style="text-align: center; font-weight: 510">Opening Soon:</h2>
+		<h2 style="text-align: center; font-weight: 510">Showing Soon:</h2>
             
             <div class="row">
 				<div class="post">
-					<img src="images/movies/avengers.jpg" alt="The Avengers">
-					<h3 class="title">Avengers</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
-				</div>
+				<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode1">
+					<img src="images/movies/boss_baby.jpg" alt="The Avengers">
+					<h3 class="title">The Boss Baby: Family Business</h3>
+					<p class="post_info">PG | Comedy , Family , Animation <br> July 2<br>
+					</button>			</div>
 			</div>
 
 			<div class="row">
 				<div class="post">
-					<img src="images/movies/inside-out.jpg" alt="Inside Out">
-					<h3 class="title">Inside Out</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
-				</div>
+				<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode1">
+					<img src="images/movies/forever_purge.jpg" alt="Inside Out">
+					<h3 class="title">The Forever Purge</h3>
+					<p class="post_info">R | Horror , Thriller <br> July 2<br> 
+					</button>		</div>
 			</div>
             
             <div class="row">
 				<div class="post">
-					<img src="images/movies/the-martian.jpg" alt="The Martian">
-					<h3 class="title">The Martian</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
-				</div>
+				<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode1">
+					<img src="images/movies/summer_soul.jpg" alt="The Martian">
+					<h3 class="title">Summer of Soul</h3>
+					<p class="post_info">PG-13 | Documentary , Music <br> July 2<br>
+					</button>	</div>
 			</div>
             
             <div class="row">
 				<div class="post">
-					<img src="images/movies/mad-max.jpg" alt="Mad Max">
-					<h3 class="title">Mad Max</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
-				</div>
+				<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode1">
+					<img src="images/movies/black_widow.jpg" alt="Mad Max">
+					<h3 class="title">Black Widow</h3>
+					<p class="post_info">PG-13 | Action , Adventure , Superhero <br> July 9<br> 
+					</button>		</div>
 			</div>
 
             <div class="row">
 				<div class="post">
-					<img src="images/movies/star-wars.jpg" alt="Star Wars">
-					<h3 class="title">Star Wars</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
+				<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode1">
+					<img src="images/movies/audible.jpg" alt="Star Wars">
+					<h3 class="title">Audidble</h3>
+					<p class="post_info">PG-13 | Documentary <br> July 1<br>
+					</button>	
 				</div>
 			</div>
             
 			<div class="row">
 				<div class="post">
-					<img src="images/movies/jurassic-world.jpg" alt="Jurassic World">
-					<h3 class="title">Jurassic World</h3>
-					<p class="post_info">PG13 | 109 Minutes</p>
+				<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode1">
+					<img src="images/movies/zola.jpg" alt="Jurassic World">
+					<h3 class="title">Zola</h3>
+					<p class="post_info">R | Drama , Comedy , True Story <br> June 30<br>
+</button>	
 				</div>
 			</div>	
             

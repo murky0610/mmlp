@@ -56,7 +56,7 @@ mysqli_free_result($result);
 
 
 if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['points_update']))
-{
+{ 
     $sql = "UPDATE customers SET points = '$total_points' WHERE id = '$id'";
 
         if(mysqli_query($link, $sql)){
@@ -388,16 +388,17 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['address_submit']))
 if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
 {
      // Validate username
-   if(empty($_POST['phone'])){
+    $phone_ex =  $_POST['phone'];
+
+    if(empty($_POST['phone'])){
        $phone_err = 'Phone Number is required.';
+    } elseif(!preg_match('/^[0-9]{11}+$/', $phone_ex)){
+        $phone_err = 'Phone Number must be valid.';
+    } else {
+        $phone = trim($_POST['phone']);
     }
-    else 
-    {
-      $phone = trim($_POST['phone']);
-    }
-    
-   
-        // Prepare an update statement
+
+    // Prepare an update statement
     if(empty($phone_err)) 
     {
             $sql = "UPDATE customers SET phone = ? WHERE id = ?";
@@ -555,19 +556,19 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
                 </div>
                   
               <div class="form-group">
-                <label class="form-label">E-mail</label>
+                <label class="form-label">Current E-mail: &nbsp <?php echo htmlspecialchars($pizza['email']); ?></label>
 
                     <!-- E-mail -->
 
                      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
                         <div class="form-group">
-                            <input type="text" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo htmlspecialchars($pizza['email']); ?>"> 
+                            <input type="text" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value=""> 
                             <span class="invalid-feedback"><?php echo $email_err; ?></span>
                         </div>
 
                         <!-- Submit button to update email -->
 
-                        <button type="submit" type="input" name="email_submit" class="btn btn-outline-secondary mt-1"> Update email</button>
+                        <button type="submit" type="input" name="email_submit" class="btn btn-outline-secondary mt-1"> Change email</button>
                     </form>
 
 
@@ -614,19 +615,15 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
             <div class="tab-pane fade" id="account-info">
               <div class="card-body">
 
-                  <div class="form-group">
-                    <label class="form-label">Birthday</label>
-                    <input type="text" class="form-control" value="May 3, 1995">
-                  </div>
 
                   <div class="form-group">
-                    <label class="form-label">Address</label>
+                    <label class="form-label">Current Address: &nbsp <?php echo htmlspecialchars($pizza['address']); ?></label>
 
                       <!-- Address -->
 
                        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
                           <div class="form-group">
-                              <input type="text" name="address" class="form-control <?php echo (!empty($address_err)) ? 'is-invalid' : ''; ?>" value="<?php echo htmlspecialchars($pizza['address']); ?>"> 
+                              <input type="text" name="address" class="form-control <?php echo (!empty($address_err)) ? 'is-invalid' : ''; ?>" value=""> 
                               <span class="invalid-feedback"><?php echo $address_err; ?></span>
                           </div>
 
@@ -640,11 +637,11 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
               <hr class="border-light m-0">
                 
               <div class="card-body">
-                <h6 class="mb-4">Contacts</h6>
+                <h6 class="mb-4">Phone Number: &nbsp <?php echo htmlspecialchars($pizza['phone']); ?></h6>
 
                      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
                           <div class="form-group">
-                              <input type="text" name="phone" class="form-control <?php echo (!empty($phone_err)) ? 'is-invalid' : ''; ?>" value="<?php echo htmlspecialchars($pizza['phone']); ?>"> 
+                              <input type="text" name="phone" class="form-control <?php echo (!empty($phone_err)) ? 'is-invalid' : ''; ?>" value=""> 
                               <span class="invalid-feedback"><?php echo $phone_err; ?></span>
                           </div>
 
@@ -663,14 +660,14 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
             <hr class="border-light m-0">
                
               <div class="card-body">    
-                <h6 class="mb-4">Your Points</h6>
+                <h6 class="mb-4">Unconfirmed Points (Based on Tickets Bought):</h6>
                 <div class="form-group">
                   <label class="form-label">Gained Points</label>
   
                   <p class="font-weight-bold text-info"> <?php echo $total_points ?> </p>
 
-                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
-                        <button type="submit" type="input" name="points_update" class="btn btn-outline-secondary mt-1"> Save Points to Account </button>
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" id="points"> 
+                        <button type="submit" type="input" name="points_update" class="btn btn-outline-secondary mt-1"> Save Points </button>
                     </form>
 
                 </div>
@@ -679,7 +676,7 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
             <hr class="border-light m-0">
                 
               <div class="card-body">
-                <h6 class="mb-4">Use Points for Discount on Food:</h6>
+                <h6 class="mb-4">Want to Add Food?</h6>
                 <a href="food-ordering.php">
                 <button type="button" class="btn btn-twitter">Go to <strong>Food</strong></button></a>
               </div>
@@ -788,7 +785,7 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
 <script src="http://netdna.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     
 <script type="text/javascript">
-
+  
 
 </script>
     
