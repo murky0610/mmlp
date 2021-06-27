@@ -536,19 +536,19 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
 
               <div class="card-body">
                 <div class="form-group">
-                  <label class="form-label">Username</label>
+                  <label class="form-label">Current Username: &nbsp <?php echo htmlspecialchars($_SESSION["username"]); ?></label>
 
                     <!-- Username -->
 
                      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post"> 
                         <div class="form-group">
-                            <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo htmlspecialchars($_SESSION["username"]); ?>">
+                            <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="">
                             <span class="invalid-feedback"><?php echo $username_err; ?></span>
                         </div>
 
                         <!-- Submit button to update username -->
 
-                        <button type="submit" type="input" name="username_submit" class="btn btn-outline-secondary mt-1"> Update username</button>
+                        <button type="submit" type="input" name="username_submit" class="btn btn-outline-secondary mt-1"> Change Username</button>
                     </form>
 
 

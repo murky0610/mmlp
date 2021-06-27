@@ -26,8 +26,6 @@ Class Action
 		$data = " movie_id = '".$movie_id."' ";
 		$data .= ", ts_id = '".$seat_group."' ";
 		$data .= ", id = '".$id."' ";
-		// $data .= ", firstname = '".$firstname."' ";
-		// $data .= ", contact_no = '".$contact_no."' ";
 		$data .= ", qty = '".$qty."' ";
 		$data .= ", price = '".$price."' ";
 		$data .= ", `date` = '".$showdate."' ";

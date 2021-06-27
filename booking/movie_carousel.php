@@ -17,6 +17,8 @@
     <?php while($row=$movies->fetch_assoc()): ?>
         <div class="movie-item">
           <img src="img/<?php echo htmlspecialchars($row['cover_img'])  ?>" alt="<?php echo htmlspecialchars($row['title']) ?>">
+
+          <!-- goes to reserve.php -->
           <div class="mov-det">
             <button type="button" class="btn btn-primary" data-id="<?php echo $row['id'] ?>">Reserve Seat</button>
           </div>
@@ -45,6 +47,7 @@
    }, 'slow');
   })
   
+  // button to go to the reserve page
   $('.mov-det button').click(function(){
     location.replace('index.php?page=reserve&id='+$(this).attr('data-id'))
   })
