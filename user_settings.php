@@ -9,7 +9,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 }
 
 
-include "register/config.php";
+require_once "register/config.php";
 
 $id = $_SESSION["id"];
 
@@ -25,7 +25,7 @@ mysqli_free_result($result);
 // mysqli_close($link);
 
 
- $sql = "SELECT * FROM tickets WHERE id = $id ORDER BY ticket_id";
+ $sql = "SELECT * FROM tickets WHERE id = $id AND total_price IS NULL ORDER BY ticket_id";
 
     // get the result set (set of rows)
     $result = mysqli_query($link, $sql);
@@ -36,37 +36,25 @@ mysqli_free_result($result);
     // free the $result from memory (good practise)
     mysqli_free_result($result);
 
-
- $sql = "SELECT price FROM tickets WHERE id = $id ORDER BY ticket_id";
+ $sql = "SELECT * FROM tickets WHERE id = $id AND total_price IS NOT NULL ORDER BY ticket_id";
 
     // get the result set (set of rows)
     $result = mysqli_query($link, $sql);
 
     // fetch the resulting rows as an array
-    $points = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    $confirmed_tickets = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-      // free the $result from memory (good practise)
+    // free the $result from memory (good practise)
     mysqli_free_result($result);
-    
 
-    $total_points = 0;
-    foreach($points as $point): 
-        $total_points = $total_points + $point['price'] / 25; 
-    endforeach;
+$sql = "SELECT * FROM customers WHERE id = $id";
 
+    // get the result set (set of rows)
+    $result = mysqli_query($link, $sql);
+        // fetch result in array format
+    $points_num = mysqli_fetch_assoc($result);
 
-if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['points_update']))
-{ 
-    $sql = "UPDATE customers SET points = '$total_points' WHERE id = '$id'";
-
-        if(mysqli_query($link, $sql)){
-                // success
-                header('Location: user_settings.php');
-            } else {
-                echo 'query error: '. mysqli_error($link);
-            }
-}
-   
+    mysqli_free_result($result);
 
 // Include config file
 require_once "register/config.php";
@@ -388,7 +376,7 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['address_submit']))
 if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
 {
      // Validate username
-    $phone_ex =  $_POST['phone'];
+    $phone_ex = $_POST['phone'];
 
     if(empty($_POST['phone'])){
        $phone_err = 'Phone Number is required.';
@@ -477,14 +465,40 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
                         <div class="card-content text-center mt-3">
 
                         <h4> Ticket ID: <?php echo htmlspecialchars($ticket['ticket_id']); ?></h4>
-                       <!--  <h4> Booking Date: <?php echo htmlspecialchars($ticket['date']); ?></h4>
-                        <h4> Booking Time: <?php echo htmlspecialchars($ticket['time']); ?></h4> -->
-                        <h4> Total price: ₱ <?php echo htmlspecialchars($ticket['price']); ?></h4>
+                        <h4> Ticket price: ₱ <?php echo htmlspecialchars($ticket['price']); ?></h4>
 
                         </div>
 
                         <div class="card-body text-center">
                             <a href="payment.php?id=<?php echo $ticket['ticket_id'] ?>">
+                            <button type="button" class="btn btn-outline-info">More details</button></a>
+                        </div>
+
+
+                    </div>
+
+            <?php endforeach; ?>
+
+        </div>
+    </div> 
+
+
+    <h4 class="text-center font-weight-bold mb-4 mt-4">Confirmed Tickets:</h4>
+    <div class="container">
+        <div class="row">
+
+            <?php foreach($confirmed_tickets as $confirmed_ticket): ?>
+
+                    <div class="card mx-1 my-1"  style="width: 15rem;">
+                        <div class="card-content text-center mt-3">
+
+                        <h4> Ticket ID: <?php echo htmlspecialchars($confirmed_ticket['ticket_id']); ?></h4>
+                        <h4> Ticket price: ₱ <?php echo htmlspecialchars($confirmed_ticket['price']); ?></h4>
+
+                        </div>
+
+                        <div class="card-body text-center">
+                            <a href="confirmed_tickets.php?id=<?php echo $confirmed_ticket['ticket_id'] ?>">
                             <button type="button" class="btn btn-outline-info">More details</button></a>
                         </div>
 
@@ -660,15 +674,10 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['phone_submit']))
             <hr class="border-light m-0">
                
               <div class="card-body">    
-                <h6 class="mb-4">Unconfirmed Points (Based on Tickets Bought):</h6>
+                <h6 class="mb-4">Confirmed Points (Based on Tickets Bought):</h6>
                 <div class="form-group">
-                  <label class="form-label">Gained Points</label>
   
-                  <p class="font-weight-bold text-info"> <?php echo $total_points ?> </p>
-
-                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" id="points"> 
-                        <button type="submit" type="input" name="points_update" class="btn btn-outline-secondary mt-1"> Save Points </button>
-                    </form>
+                  <p class="font-weight-bold text-info"> <?php echo $points_num['Points']; ?> </p>
 
                 </div>
               </div>

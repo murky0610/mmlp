@@ -26,7 +26,7 @@
  	<div class="container pt-5">
  		<div class="col-lg-12">
  			<a href="booking.php">
-                   <button type="button" class="btn btn-outline-info mb-4">Go Back</button></a>
+                   <button type="button" class="btn btn-secondary mb-4">Go Back</button></a>
  			<div class="row">
  				<div class="col-md-4">
  					<img src="img/<?php echo $mov['cover_img'] ?>" class="reserve-img">

@@ -8,29 +8,6 @@
 	}
 
 
-	if(isset($_POST['delete'])){
-
-		$id_to_delete = mysqli_real_escape_string($link, $_POST['id']);
-
-		$sql = "DELETE FROM food WHERE ticket_id = $id_to_delete";
-
-		if(mysqli_query($link, $sql)){
-			header('Location: user_settings.php');
-		} else {
-			echo 'query error: '. mysqli_error($link);
-		}
-
-
-		$del = "DELETE FROM tickets WHERE ticket_id = $id_to_delete";
-
-		if(mysqli_query($link, $del)){
-			header('Location: user_settings.php');
-		} else {
-			echo 'query error: '. mysqli_error($link);
-		}	
-
-	}
-
 	// check GET request id param
 	if(isset($_GET['id'])){
 		// escape sql chars
@@ -126,8 +103,7 @@
 	<header id="top_header" class="clearfix">
 		<div class="wrapper">
 			<h1 class="logo"> <a href="user_settings.php">
-                        <button type="button" class="btn">Go Back</button></a> <a href="food-ordering.php">
-             	<button type="button" class="waves-effect waves-light btn">Update Food Choices</button> </a>   </h1>
+                        <button type="button" class="btn">Go Back</button></a>  </h1>
 		</div>
 	</header>
 
@@ -171,16 +147,6 @@
 </div>
 
 
-	<div class="center-align">
-
-		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
-				<input type="hidden" name="id" value="<?php echo $ticket['ticket_id']; ?>">
-						<input type="submit" name="delete"  value="Delete Ticket" class="waves-effect waves-light red btn">
-		</form>
-				<a href="confirm_payment.php">
-		  				<input type="submit" name="confirm"  value="Confirm Booking" class="waves-effect waves-light green lighthen-2 btn">
-		  		</a>
-	</div>
 
 	<footer id="main_footer">
 		<p class="logo">MMLP</p>
