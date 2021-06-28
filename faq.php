@@ -54,8 +54,9 @@
             To book a reservation, you first need to have an account. If you don't have an account yet, you can sign up for free.<br>
             Once you're logged in, select "Book Now!" on the upper right of your screen. Then, you can choose the specific date and time of your desired schedule. The showing date and time of the movie differs from each theater room. Each theater room has 3 seat groups. You have to choose which seat group you want to seat in.  
             <br> <br>
-            Once you have booked your reservation, you have to confirm it in user settings in order to properly reserve your seat together with your chosen foodies.
-
+            Once you have booked your reservation, you have to confirm it in user settings in order to properly reserve your seat together with your chosen foodies. You can decide to delete your ticket(s) if you have decided to change your mind. 
+            <br><br>
+            You also get points in buying tickets. These can be used to buy additional food.
           </div>
         </div>
       </div>
@@ -76,6 +77,8 @@
               <li>Debit Card</li>
               <li>Paypal</li>
             </ul>
+            <br>
+            Once you have confirmed the seats, the ticket/foodies are non-refundable. So, make sure you spend them wisely!
           </div>
         </div>
       </div>
@@ -86,7 +89,7 @@
         </div>
         <div class="accordion-item-body">
           <div class="accordion-item-body-content">
-            Right after booking a schedule and have reserved a seat, you are asked if you want to order food or not. If so, you get to choose the food you want.
+            Right after booking a schedule and have reserved a seat, you are asked if you want to order food or not. If so, you get to choose the food you want. 
           </div>
         </div>
       </div>
