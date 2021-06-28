@@ -2,7 +2,7 @@
 // Initialize the session
 session_start();
 
-include "register/config.php";
+require_once "register/config.php";
 
 $id = $_SESSION["id"];
 
@@ -64,6 +64,17 @@ if(isset($_POST['ticket_submit']))
   	$softdrinks_price = $softdrinks * $food['softdrinks_menu_price'];
   	$water_price = $water * $food['water_menu_price'];
 
+
+  	$avail_times = $_POST['avail_times'];
+
+  	if($_SESSION['total_points'] > ($avail_times*10))
+  	{
+  		$popcorn = $popcorn + $avail_times;
+  	} else {
+  		$avail_times = 0;
+  	}
+  	
+
 	$result = mysqli_query($link, "SELECT * FROM food WHERE ticket_id = $ticket_id ");
 
 	$num_rows = mysqli_num_rows($result);
@@ -72,8 +83,20 @@ if(isset($_POST['ticket_submit']))
 		$sql = "UPDATE food SET num_fries = '$fries', fries_price = '$fries_price', popcorn_price = '$popcorn_price', num_popcorn = '$popcorn', nachos_price = '$nachos_price', num_nachos = '$nachos', softdrinks_price = '$softdrinks_price', num_softdrinks = '$softdrinks', water_price = '$water_price', num_water = '$water' WHERE ticket_id = '$ticket_id'";
 
 		if(mysqli_query($link, $sql)){
-				// success
-				header('Location: food-ordering.php');
+
+					$id = $_SESSION['id'];
+					$_SESSION['total_points'] = $_SESSION['total_points'] -  $avail_times * 10;
+                    $total_points = $_SESSION['total_points'];
+					$sql = "UPDATE customers SET points = $total_points WHERE id = $id";
+
+                    if(mysqli_query($link, $sql))
+                    {
+                        
+                        header('Location: user_settings.php');
+                    } else {
+                    	echo 'query error: '. mysqli_error($link);
+                    }
+
 			} else {
 				echo 'query error: '. mysqli_error($link);
 			}
@@ -84,7 +107,19 @@ if(isset($_POST['ticket_submit']))
 
 			if(mysqli_query($link, $sql)){
 				// success
-				header('Location: food-ordering.php');
+					$id = $_SESSION['id'];
+					$_SESSION['total_points'] = $_SESSION['total_points'] -  $avail_times * 10;
+                    $total_points = $_SESSION['total_points'];
+					$sql = "UPDATE customers SET points = $total_points WHERE id = $id";
+
+
+                    if(mysqli_query($link, $sql))
+                    {
+                        header('Location: user_settings.php');
+                    } else {
+                    	echo 'query error: '. mysqli_error($link);
+					}
+
 			} else {
 				echo 'query error: '. mysqli_error($link);
 			}
@@ -268,14 +303,14 @@ if(isset($_POST['ticket_submit']))
 	</section> 
     
     	<div style="margin-left: 3.5em;">
-        <h2>ORDER LIST:</h2>
+        <h2>CHOOSE TICKET ID:</h2>
 
 			  Choose ticket ID to include the food order:
 
-			  <select name="ticket_id">
+			  <select name="ticket_id" required>
 			    <?php
 
-					$tickets = mysqli_query($link, "SELECT ticket_id FROM tickets");
+					$tickets = mysqli_query($link, "SELECT ticket_id FROM tickets WHERE total_price IS NULL");
 							
 			        while($data = mysqli_fetch_array($tickets))
 			        {
@@ -286,7 +321,24 @@ if(isset($_POST['ticket_submit']))
 			    ?>
    
 			  </select>
-			  	 <button type="submit" type="input" name="ticket_submit" class="btn btn-outline-secondary mt-1">Update Ticket with Food Order</button>
+
+			  <br><br> Limited Time! Use 10 points to add 1 popcorn. Choose how many times to avail: 
+
+			  	<select name="avail_times" required>
+				  
+						    <?php
+								$avail_times = 0;
+						        while($avail_times < 11)
+						        {
+						            echo "<option value='". $avail_times ."'>" .$avail_times ."</option>";  // displaying data in option menu
+						            $avail_times++;
+						        }
+						    ?>
+	   	
+				</select>
+				<br><br>
+			   <button type="submit" type="input" name="ticket_submit" class="btn btn-outline-secondary mt-1">Update Ticket with Food Order</button>
+
 </form>
 		</div>
 		<?php mysqli_close($link); ?>

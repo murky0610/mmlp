@@ -45,33 +45,26 @@
 	<section id="banner" class="clearfix">
 		<div id="banner_content_wrapper">
 			<div id="poster">
-				<img src="images/movies/f9.jpg" alt="Deadpool Movie Poster" class="featured_image">
-				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp
-				
-				<button class="btn btn-slide-left">Book Now!</button>
+				<img src="images/movies/deadpool.jpg" alt="Deadpool Movie Poster" class="featured_image">
+				<img src="images/play_button.png" alt="Play Trailer" class="play_button">
 			</div>
 			<div id="content">
-				<h2 class="feature">Feature:</h2>
-				<h2 class="title">F9</h2>
+                <h2 class="feature">Featured: </h2>
+				<h2 class="title">Deadpool</h2>
 				<div class="ratings">
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
+					<i class="fa fa-star inactive"></i>
 				</div>
 
-				<p class="description">Vin Diesel’s Dom Toretto is leading a quiet life off the 
-		grid with Letty and his son, little Brian, but they 
-		know that danger always lurks just over their peaceful 
-		horizon. This time, that threat will force Dom to 
-		confront the sins of his past if he’s going to save 
-		those he loves most. His crew joins together to stop 
-		a world-shattering plot led by the most skilled assassin 
-		and high-performance driver they’ve ever encountered: 
-		a man who also happens to be Dom’s forsaken brother, Jakob (John Cena).</p>
+				<p class="description">A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.</p>
 
-				<p class="info">PG-13 <span>|</span> 2 hours, 25 minutes <span>|</span> Action | Adventure | Sequel <span>|</span> June 25, 2021</p>
+				<p class="info">R <span>|</span> 108 min <span>|</span> Action, Adventure, Comedy <span>|</span> 12 February 2021</p>
+                
+                <a href="booking/booking.php"> <button class="button">Book Now!</button> </a>
+                
 
 			</div>
 		</div>
@@ -80,7 +73,7 @@
 	<section id="top_movies" class="clearfix">
 		<div class="wrapper">
 			<header class="clearfix">
-				<h2>Popular Movies</h2>
+				<h2>Upcoming Movies</h2>
 				<a href="movies.php" class="view_more">View All Movies</a>
 			</header>
 

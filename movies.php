@@ -25,7 +25,7 @@
 
 	<section id="top_movies" class="clearfix">
 		<div class="wrapper">
-            <h2 style="text-align: center; font-weight: 510">Now Showing:</h2>
+            <h2 style="text-align: center; font-weight: 510">Showing Next Month:</h2>
 			
 			<div class="row">
 			

@@ -34,7 +34,7 @@ Class Action
 
 		$save = $this->db->query("INSERT INTO tickets set ".$data);
 		if($save){
-			return 1;
+			return 1;  
 		}
 	}
 }

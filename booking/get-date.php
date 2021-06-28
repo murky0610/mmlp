@@ -6,6 +6,7 @@
       session_start();
       $movie = $_SESSION['movie'];
       $_SESSION['theater_id'] = $_POST['theaters_id'];
+      $_SESSION['chosen_movie'] = $movie;
       $theater_id = $_POST['theaters_id'];
       $request = "SELECT DISTINCT * FROM movies_showtime WHERE ts_id = $theater_id AND movie_id = $movie";
       
@@ -26,7 +27,9 @@
       session_start();
       $show_date = $_POST['d_id'];
       $ts_id = $_SESSION['theater_id'];
-      $sql = "SELECT showtime FROM movies_showtime WHERE showdate = '$show_date' AND ts_id = $ts_id";
+      $chosen_movie = $_SESSION['chosen_movie'];
+
+      $sql = "SELECT showtime FROM movies_showtime WHERE showdate = '$show_date' AND ts_id = $ts_id AND movie_id = $chosen_movie";
       $res = mysqli_query($conn, $sql);
 
       echo '<option value="">Select Time</option>'; 

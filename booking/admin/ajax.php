@@ -1,8 +1,10 @@
 <?php
 
-$action = $_GET['action'];
 
 include 'admin_class.php';
+
+$action = $_GET['action'];
+
 
 $crud = new Action();
 
