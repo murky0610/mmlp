@@ -47,7 +47,7 @@ $id = $_SESSION["id"];
         <div class="wrapper">
           
 
-        <div class="text-center mt-4">
+       <div class="text-center mt-4" style="border:solid;padding:15px;background-image: url('img/bg.jpg');">
         <h3>Want to add some <b>foodies</b>?</h3>
         <a href="../food-ordering.php">
              <button type="button" class="btn btn-outline-warning mt-4">Go to <strong>Food</strong></button> </a>
