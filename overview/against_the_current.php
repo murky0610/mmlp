@@ -70,7 +70,7 @@
                      with the magical, rugged coastline of the country a 
                      backdrop to the story of Veiga’s transition</p>
 
-				<p class="info">NR <span>|</span> 1 hour, 30 minutes <span>|</span> Documentary <span>|</span> June 25, 2021</p>
+				<p class="info">NR <span>|</span> 1 hour, 30 minutes <span>|</span> Documentary <span>|</span> </p>
 				 
                 
                 <iframe width="553" height="280" src="https://www.youtube.com/embed/zKV7VLbhooQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -58,7 +58,7 @@
                a secret underground city ruled over by the tyrannical 
                Morgäa, keeper of an incredible treasure.</p>
 
-				<p class="info">PG <span>|</span> 1 hour, 30 minutes <span>|</span> Family | Animation <span>|</span> June 25, 2021</p>
+				<p class="info">PG <span>|</span> 1 hour, 30 minutes <span>|</span> Family | Animation <span>|</span></p>
 				 
                 
                 <iframe width="553" height="280" src="https://www.youtube.com/embed/pYyisFg2SK8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

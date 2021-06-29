@@ -1,10 +1,7 @@
 <?php
-
-
 include 'admin_class.php';
 
 $action = $_GET['action'];
-
 
 $crud = new Action();
 

@@ -322,7 +322,7 @@ if(isset($_POST['ticket_submit']))
    
 			  </select>
 
-			  <br><br> Limited Time! Use 10 points to add 1 popcorn. Choose how many times to avail: 
+			  <br><br> Limited Time! Use 10 points to add 1 popcorn. Choose how many times to avail: (Points can't be refunded once used.) 
 
 			  	<select name="avail_times" required>
 				  

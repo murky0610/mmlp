@@ -126,10 +126,5 @@ while($row=$ts->fetch_assoc())
 </script>
 
 <script>
-	
-	// $('#seat_group').change(function(){
-	// 	$('#display-count').html($(this).find('option[value="'+$(this).val()+'"]').attr('data-count')+' seats available')
-	// 	$('#qty').removeAttr('max').attr('max',$(this).find('option[value="'+$(this).val()+'"]').attr('data-count'))
-	// })
 
 </script>

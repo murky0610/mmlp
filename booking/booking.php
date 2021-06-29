@@ -41,13 +41,13 @@ $id = $_SESSION["id"];
 	</header>
 
 
-    <?php include 'index.php'; ?> 
+    <?php include 'index.php'; ?>
 
      <section id="top_movies" class="clearfix">
-        <div class="wrapper">
+        <div class="wrapper" >
           
 
-        <div class="text-center mt-4">
+        <div class="text-center mt-4" style="border:solid;padding:20px;background-image: url('img/bg3.jpg');  background-size: 100% auto;">
         <h3>Want to add some <b>foodies</b>?</h3>
         <a href="../food-ordering.php">
              <button type="button" class="btn btn-outline-warning mt-4">Go to <strong>Food</strong></button> </a>

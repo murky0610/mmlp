@@ -36,7 +36,7 @@
 				<img src="../images/movies/ww.jpg" alt="Deadpool Movie Poster" class="featured_image">
 				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp
 				
-				<button class="btn btn-slide-left">Book Now!</button>
+				<a href="../booking/booking.php">	<button class="btn btn-slide-left">Book Now!</button></a>
 			</div>
 			<div id="content">
               
@@ -58,7 +58,7 @@
                uncover the truth behind a mysterious creature that has begun terrorizing the community.
 </p>
 
-				<p class="info">R<span>|</span> 1 hour, 40 minutes <span>|</span> Horror | Comedy <span>|</span> June 25, 2021</p>
+				<p class="info">R<span>|</span> 1 hour, 40 minutes <span>|</span> Horror | Comedy <span>|</span> </p>
 				 
                 
               

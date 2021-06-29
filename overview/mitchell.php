@@ -7,7 +7,7 @@
 <html>
 <head>
 	<title>mmlp</title>
-	<link rel="stylesheet" type="text/css" href="../css/styles_overview_fp.css">
+	<link rel="stylesheet" type="text/css" href="../css/mitchell.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,39 +33,33 @@
 	<section id="banner" class="clearfix">
 		<div id="banner_content_wrapper">
 			<div id="poster">
-				<img src="../images/movies/fp.jpg" alt="Deadpool Movie Poster" class="featured_image">
+				<img src="../images/movies/mitchell.jpg" alt="Deadpool Movie Poster" class="featured_image">
 				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp
 				
 				<a href="../booking/booking.php">	<button class="btn btn-slide-left">Book Now!</button></a>
 			</div>
 			<div id="content">
               
-				<h2 class="title" >False Positive</h2>
+				<h2 class="title" >The Mitchells vs. the Machines</h2>
 				<div class="ratings">
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
-					<i class="fa fa-star inactive" ></i>
+					<i class="fa fa-star"></i>
 					<i class="fa fa-star inactive"></i>
 				</div>
 
-				<p class="description">After months of trying and failing to get pregnant, 
-            Lucy (Ilana Glazer) and Adrian (Justin Theroux) finally
-             find their dream fertility doctor in the illustrious 
-             Dr. Hindle (Pierce Brosnan). But after becoming pregnant 
-             with a healthy baby girl, Lucy begins to notice something 
-             sinister through Hindle’s gleaming charm, and she sets out 
-             to uncover the unsettling truth about him, and her own 
-             “birth story.” As if getting pregnant weren’t complicated enough…
-</p>
+				<p class="description">Young Katie Mitchell embarks on a road trip with her proud parents,
+                 younger brother and beloved dog to start her first year at film school. 
+                 But their plans to bond as a family soon get interrupted when the world's 
+                 electronic devices come to life to stage an uprising. With help from two friendly robots, 
+                 the Mitchells must now come together to save one another -- and the planet -- 
+                 from the new technological revolution.</p>
 
-				<p class="info">R<span>|</span> 1 hour, 32 minutes <span>|</span> Horror | Thriller <span>|</span> </p>
+				<p class="info">U <span>|</span> 2 hours <span>|</span> Anime | Adventure | Comedy <span>|</span> June 19, 2021</p>
 				 
                 
-              
-  
-				<iframe width="553" height="280" src="https://www.youtube.com/embed/HL2Q3rHvxew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                <iframe width="553" height="280" src="https://www.youtube.com/embed/_ak5dFt8Ar0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				
             
 
