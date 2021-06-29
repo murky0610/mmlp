@@ -38,7 +38,7 @@
  							<hr>
  							<p class=""><small><b>Description: </b><?php echo $mov['description'] ?></small></p>
  							<p class=""><small><b>Duration: </b><?php echo $duration ?> hrs</small></p>
- 							<p class=""><b>Price: </b> $ <i><?php echo $mov['price'] ?></i></p>
+ 							<p class=""><b>Price: </b> ₱ <i><?php echo $mov['price'] ?></i></p>
 
  						</div>
  					</div>
@@ -118,14 +118,12 @@
 				method:'POST',
 				data:$(this).serialize(),
 				success:function(resp){
-					if(resp == 1){
+					
 						alert("Reservartion successfully saved, awaiting confirmation");
 						location.replace('booking.php')
-					} else {
-						location.replace('booking.php')
-					}
 					
 				}
+
 			})
 		})
 	})

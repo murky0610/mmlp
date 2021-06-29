@@ -7,7 +7,7 @@
 <html>
 <head>
 	<title>mmlp</title>
-	<link rel="stylesheet" type="text/css" href="../css/styles_overview_fp.css">
+	<link rel="stylesheet" type="text/css" href="../css/raya.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,39 +33,30 @@
 	<section id="banner" class="clearfix">
 		<div id="banner_content_wrapper">
 			<div id="poster">
-				<img src="../images/movies/fp.jpg" alt="Deadpool Movie Poster" class="featured_image">
+				<img src="../images/movies/raya.jpg" alt="Deadpool Movie Poster" class="featured_image">
 				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp
 				
 				<a href="../booking/booking.php">	<button class="btn btn-slide-left">Book Now!</button></a>
 			</div>
 			<div id="content">
               
-				<h2 class="title" >False Positive</h2>
+				<h2 class="title" >Raya and The Last Dragon</h2>
 				<div class="ratings">
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
-					<i class="fa fa-star inactive" ></i>
+					<i class="fa fa-star"></i>
 					<i class="fa fa-star inactive"></i>
 				</div>
 
-				<p class="description">After months of trying and failing to get pregnant, 
-            Lucy (Ilana Glazer) and Adrian (Justin Theroux) finally
-             find their dream fertility doctor in the illustrious 
-             Dr. Hindle (Pierce Brosnan). But after becoming pregnant 
-             with a healthy baby girl, Lucy begins to notice something 
-             sinister through Hindle’s gleaming charm, and she sets out 
-             to uncover the unsettling truth about him, and her own 
-             “birth story.” As if getting pregnant weren’t complicated enough…
-</p>
+				<p class="description">Raya, a warrior, sets out to track down Sisu, a dragon,
+                 who transferred all her powers into a magical gem which is now scattered all 
+                 over the kingdom of Kumandra, dividing its people.</p>
 
-				<p class="info">R<span>|</span> 1 hour, 32 minutes <span>|</span> Horror | Thriller <span>|</span> </p>
+				<p class="info">PG <span>|</span> 2 hours <span>|</span> Action | Anime | Adventure <span>|</span> June 19, 2021</p>
 				 
                 
-              
-  
-				<iframe width="553" height="280" src="https://www.youtube.com/embed/HL2Q3rHvxew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                <iframe width="553" height="280" src="https://www.youtube.com/embed/1VIZ89FEjYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				
             
 

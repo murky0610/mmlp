@@ -55,7 +55,7 @@
 					pressure propels the couple to embark on a treacherous 
 					journey to New York with dreams, hopes, and memories in tow.</p>
 
-				<p class="info">R <span>|</span> 1 hour, 50 minutes <span>|</span> Drama <span>|</span> June 25, 2021</p>
+				<p class="info">R <span>|</span> 1 hour, 50 minutes <span>|</span> Drama <span>|</span> </p>
 				 
                 
 				<iframe width="553" height="280" src="https://www.youtube.com/embed/ZTtjnzVLP6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

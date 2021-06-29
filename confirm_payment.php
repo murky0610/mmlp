@@ -20,7 +20,7 @@ $sql = "SELECT * FROM tickets WHERE ticket_id = $ticket_id";
 $result = mysqli_query($link, $sql);
 $ticket = mysqli_fetch_assoc($result);
 
-echo print_r($ticket);
+
 
 $id = $ticket['id']; 
 $movie_id = $ticket['movie_id'];
@@ -34,11 +34,11 @@ $seats = "SELECT available_seats FROM movies_showtime WHERE movie_id = $movie_id
 $result = mysqli_query($link, $seats);
 $ava_seats = mysqli_fetch_assoc($result);
 
-echo print_r($ava_seats);
+
 
 $seats_left = $ava_seats['available_seats'] - $seat_qty;
 
-echo $seats_left;
+
 
 if($seats_left < 0 ){
     $message = "Too late! No more seats left! Please delete ticket. ";

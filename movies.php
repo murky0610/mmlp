@@ -25,76 +25,76 @@
 
 	<section id="top_movies" class="clearfix">
 		<div class="wrapper">
-            <h2 style="text-align: center; font-weight: 510">Showing Next Month:</h2>
-			
+            <h2 style="text-align: center; font-weight: 510">Now Showing:</h2>
 			<div class="row">
 			
-				<div class="post">
-					<form>
-				<button type="submit" formaction="overview/f9.php"class="scanfcode">
-					<img src="images/movies/f9.jpg" alt="The Martian">
-					
-					<h3 class="title">Fast and Furious 9</h3>
-					<p class="post_info">PG13 | Action , Genre <br> June 20 - 29 <br> 2 hours, 25 minutes <br> <span><b>10:30 am - 1:00 pm</b></span> </p>
+			<div class="post">
+				<form>
+			<button type="submit" formaction="overview/malcolm.php"class="scanfcode">
+				<img src="images/movies/malcolm.jpg" alt="The Martian">
+				
+				<h3 class="title">Malcolm & Marie</h3>
+				<p class="post_info">R | Drama , Romance <br> June 25<br> 1 hour, 54 minutes<br> <span><b>10:30 am - 1:00 pm</b></span> </p>
 </button>
-				</div>
+			</div>
 
 </div>
-			<div class="row">
-				<div class="post">
-				<button type="submit" formaction="overview/false_positive.php"class="scanfcode">
-					<img src="images/movies/fp.jpg" alt="Inside Out">
-					<h3 class="title">False Positive</h3>
-					<p class="post_info">R | Horror , Thriller <br> June 23 - 29<br> 1 hour, 32 minutes <br> <span><b>1:30 pm - 3:00 pm</b></span></p>
-				
-				</div>
-				</button>
-			</div>
-
-			<div class="row">
-				<div class="post">
-				<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode">
-					<img src="images/movies/ww.jpg" alt="Werewolves Within">
-					<h3 class="title">Werewolves Within</h3>
-					<p class="post_info">R | Comedy , Horror <br> June 25 - 29<br> 1 hour, 40 minutes<br><span><b>3:30 pm - 5:00 pm</b></span></p>
-</button>
-				</div>
-			</div>
-			<div class="row">
-		
+		<div class="row">
+			<div class="post">
+			<button type="submit" formaction="overview/raya.php"class="scanfcode">
+				<img src="images/movies/raya.jpg" alt="Inside Out">
+				<h3 class="title">Raya and The Last Dragon</h3>
+				<p class="post_info">PG | Anime , Adventure <br> June 19<br> 2 hours <br> <span><b>1:30 pm - 3:00 pm</b></span></p>
 			
-				<div class="post">
-				<button type="submit" formaction="overview/felix_treasure.php"class="scanfcode">
-					<img src="images/movies/fathd.jpg" alt="Mad Max">
-					<h3 class="title" style="">Felix And The Hidden Treasure</h3>
-					<p class="post_info">PG | Family , Animation <br> June 25 - 30 <br>  1 hour, 30 minutes<br><span><b>5 pm - 6:30 pm</b></span></p>
-</button>
-				</div>
-			
-
-		
 			</div>
-			
-			<div class="row">
-				<div class="post">
-				<button type="submit" formaction="overview/against_the_current.php"class="scanfcode">
-					<img src="images/movies/atc.jpg" alt="Star Wars">
-					<h3 class="title">Against The Current</h3>
-					<p class="post_info">NR | Documentary <br> June 25 - 30 <br>  1 hour, 30 minutes<br><span><b>7:00 pm - 8:30 pm</b></span></p>
-
-				</div>
-				</button>
-			</div>
-
-			<div class="row">
-				<div class="post">
-				<button type="submit" formaction="overview/i_carry.php"class="scanfcode">
-					<img src="images/movies/icywm.jpg" alt="The Avengers">
-					<h3 class="title">I Carry You With Me</h3>
-					<p class="post_info">R | Drama <br> June 26 - 30 <br>  1 hour, 50 minutes<br><span><b>8:30 pm - 11:30 pm</b></span></p>
 			</button>
-				</div>
+		</div>
+
+		<div class="row">
+			<div class="post">
+			<button type="submit" formaction="overview/mitchell.php"class="scanfcode">
+				<img src="images/movies/mitchell.jpg" alt="Werewolves Within">
+				<h3 class="title">The Mitchells vs. the Machines</h3>
+				<p class="post_info">U | Anime , Comedy <br> June 19<br> 2 hours<br><span><b>3:30 pm - 5:00 pm</b></span></p>
+</button>
 			</div>
+		</div>
+		<div class="row">
+	
+		
+			<div class="post">
+			<button type="submit" formaction="overview/outside.php"class="scanfcode">
+				<img src="images/movies/out_wire.jpg" alt="Mad Max">
+				<h3 class="title" style="">Outside the Wire</h3>
+				<p class="post_info">R | Action , Fantasy <br> June 19 <br>  1 hour, 54 minutes<br><span><b>5 pm - 6:30 pm</b></span></p>
+</button>
+			</div>
+		
+
+	
+		</div>
+		
+		<div class="row">
+			<div class="post">
+			<button type="submit" formaction="overview/little.php"class="scanfcode">
+				<img src="images/movies/little.jpg" alt="Star Wars">
+				<h3 class="title">The Little Things</h3>
+				<p class="post_info">15 | Crime , Drama <br> June 19 <br>  2 hours, 12 minutes<br><span><b>7:00 pm - 8:30 pm</b></span></p>
+
+			</div>
+			</button>
+		</div>
+
+		<div class="row">
+			<div class="post">
+			<button type="submit" formaction="overview/mk11.php"class="scanfcode">
+				<img src="images/movies/MK11.jpg" alt="The Avengers">
+				<h3 class="title">Mortal Kombat 11</h3>
+				<p class="post_info">15 | Action , Fantasy <br> June 25 <br>  1 hour, 49 minutes<br><span><b>8:30 pm - 11:30 pm</b></span></p>
+		</button>
+			</div>
+		</div>
+		
 
 		</div>
 	</section>
@@ -105,7 +105,89 @@
 		<div class="wrapper">
 		<h2 style="text-align: center; font-weight: 510">Showing Soon:</h2>
             
-            <div class="row">
+		<div class="row">
+			
+			<div class="post">
+				<form>
+			<button type="submit" formaction="overview/f9.php"class="scanfcode">
+				<img src="images/movies/f9.jpg" alt="The Martian">
+				
+				<h3 class="title">Fast and Furious 9</h3>
+				<p class="post_info">PG13 | Action , Genre <br> 2 hours, 25 minutes <br>  </p>
+</button>
+			</div>
+
+</div>
+		<div class="row">
+			<div class="post">
+			<button type="submit" formaction="overview/false_positive.php"class="scanfcode">
+				<img src="images/movies/fp.jpg" alt="Inside Out">
+				<h3 class="title">False Positive</h3>
+				<p class="post_info">R | Horror , Thriller <br> 1 hour, 32 minutes <br> </p>
+			
+			</div>
+			</button>
+		</div>
+
+		<div class="row">
+			<div class="post">
+			<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode">
+				<img src="images/movies/ww.jpg" alt="Werewolves Within">
+				<h3 class="title">Werewolves Within</h3>
+				<p class="post_info">R | Comedy , Horror<br> 1 hour, 40 minutes<br></p>
+</button>
+			</div>
+		</div>
+		<div class="row">
+	
+		
+			<div class="post">
+			<button type="submit" formaction="overview/felix_treasure.php"class="scanfcode">
+				<img src="images/movies/fathd.jpg" alt="Mad Max">
+				<h3 class="title" style="">Felix And The Hidden Treasure</h3>
+				<p class="post_info">PG | Family , Animation <br>  1 hour, 30 minutes<br></p>
+</button>
+			</div>
+		
+
+	
+		</div>
+		
+		<div class="row">
+			<div class="post">
+			<button type="submit" formaction="overview/against_the_current.php"class="scanfcode">
+				<img src="images/movies/atc.jpg" alt="Star Wars">
+				<h3 class="title">Against The Current</h3>
+				<p class="post_info">NR | Documentary <br>  1 hour, 30 minutes<br></p>
+
+			</div>
+			</button>
+		</div>
+
+		<div class="row">
+			<div class="post">
+			<button type="submit" formaction="overview/i_carry.php"class="scanfcode">
+				<img src="images/movies/icywm.jpg" alt="The Avengers">
+				<h3 class="title">I Carry You With Me</h3>
+				<p class="post_info">R | Drama  <br>  1 hour, 50 minutes<br></p>
+		</button>
+			</div>
+		</div>
+            
+		</div>
+        
+	</section>
+
+	<footer id="main_footer">
+		<p class="logo">MMLP</p>
+		<p class="copyright">&copy;2021 MMLP. All Rights Reserved.</p>
+		<div class="links">
+            <a href="#">About Us</a>
+			<a href="#">Terms of Service</a>
+			<a href="#">Privacy Policy</a>
+		</div>
+	</footer>
+	 <!-- <div class="row">
 				<div class="post">
 				<button type="submit" formaction="overview/werewolves_within.php"class="scanfcode1">
 					<img src="images/movies/boss_baby.jpg" alt="The Avengers">
@@ -159,20 +241,6 @@
 					<p class="post_info">R | Drama , Comedy , True Story <br> June 30<br>
 </button>	
 				</div>
-			</div>	
-            
-		</div>
-        
-	</section>
-
-	<footer id="main_footer">
-		<p class="logo">MMLP</p>
-		<p class="copyright">&copy;2021 MMLP. All Rights Reserved.</p>
-		<div class="links">
-            <a href="#">About Us</a>
-			<a href="#">Terms of Service</a>
-			<a href="#">Privacy Policy</a>
-		</div>
-	</footer>
+			</div>	 -->
 </body>
 </html>

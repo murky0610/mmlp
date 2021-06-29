@@ -59,7 +59,7 @@
 		and high-performance driver they’ve ever encountered: 
 		a man who also happens to be Dom’s forsaken brother, Jakob (John Cena).</p>
 
-				<p class="info">PG-13 <span>|</span> 2 hours, 25 minutes <span>|</span> Action | Adventure | Sequel <span>|</span> June 25, 2021</p>
+				<p class="info">PG-13 <span>|</span> 2 hours, 25 minutes <span>|</span> Action | Adventure | Sequel <span>|</span> </p>
 				 
                 
 				<iframe width="553" height="280" src="https://www.youtube.com/embed/FqAjVAf5fNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
