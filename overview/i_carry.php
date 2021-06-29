@@ -36,7 +36,6 @@
 				<img src="../images/movies/icywm.jpg" alt="Deadpool Movie Poster" class="featured_image">
 				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp
 				
-				<a href="../booking/booking.php">	<button class="btn btn-slide-left">Book Now!</button></a>
 			</div>
 			<div id="content">
               
